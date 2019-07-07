@@ -17,7 +17,8 @@ I am currently a [Computer Engineering](http://ceg.nus.edu.sg/) undergraduate at
 
 | S/N |   Level   | Solution |
 | --- | --------- | -------- |
-| 001 | Easy      | [Java](src/main/java/TwoSum.java) |
+| [001](questions/1.html) | ? | [Java](src/main/java/TwoSum.java) |
+| [002](questions/2.html) | ? | [Java](src/main/java/MultiplyEveryone.java) |
 
 ## Licence
 
