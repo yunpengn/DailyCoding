@@ -6,11 +6,18 @@ This repository contains my solutions to the [Daily Coding Problems](https://www
 
 ## About Me
 
-I am currently a [Computer Engineering](http://ceg.nus.edu.sg/) undergraduate at the [National University of Singapore](http://www.nus.edu.sg/). I am passionate about programming and software engineering.
+I am currently a [Computer Engineering](http://ceg.nus.edu.sg/) undergraduate at the 
+[National University of Singapore](http://www.nus.edu.sg/). I am passionate about programming and software engineering.
 
 - Personal Website: [https://yunpengn.github.io/](https://yunpengn.github.io/)
 - LinkedIn: [@Yunpeng Niu](https://www.linkedin.com/in/yunpeng-niu/en)
 - GitHub: [@yunpengn](https://github.com/yunpengn/)
+
+## Table of Contents
+
+| S/N |   Level   | Solution |
+| --- | --------- | -------- |
+| 001 | Easy      | [Java](src/main/java/TwoSum.java) |
 
 ## Licence
 
