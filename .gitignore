@@ -21,7 +21,6 @@ logs/
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -41,3 +40,6 @@ pids
 # Node.js dependency directories
 node_modules/
 jspm_packages/
+
+# Java dependency directories
+.gradle/
