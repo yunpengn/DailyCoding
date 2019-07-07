@@ -43,3 +43,8 @@ jspm_packages/
 
 # Java dependency directories
 .gradle/
+
+# Java build output
+build/
+output/
+release/
