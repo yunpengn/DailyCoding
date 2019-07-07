@@ -1,0 +1,60 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Coding Problem: Problem #17
+</title>
+    
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td valign="top" style="padding: 0;">
+          <table border="0" cellpadding="20" cellspacing="0" width="600">
+            <tr>
+              <td align="center" valign="top" style="padding: 0;">
+                <p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Good morning! Here&#39;s your coding interview problem for today.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">This problem was asked by Google.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Suppose we represent our file system by a string in the following manner:</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The string <code>&quot;dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext&quot;</code> represents:</p>
+<pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>dir
+    subdir1
+    subdir2
+        file.ext
+</code></pre><p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The directory <code>dir</code> contains an empty sub-directory <code>subdir1</code> and a sub-directory <code>subdir2</code> containing a file <code>file.ext</code>.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The string <code>&quot;dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext&quot;</code> represents:</p>
+<pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>dir
+    subdir1
+        file1.ext
+        subsubdir1
+    subdir2
+        subsubdir2
+            file2.ext
+</code></pre><p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The directory <code>dir</code> contains two sub-directories <code>subdir1</code> and <code>subdir2</code>. <code>subdir1</code> contains a file <code>file1.ext</code>
+and an empty second-level sub-directory <code>subsubdir1</code>. <code>subdir2</code> contains a second-level sub-directory
+<code>subsubdir2</code> containing a file <code>file2.ext</code>.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">We are interested in finding the longest (number of characters) absolute path to a file within our
+file system. For example, in the second example above, the longest absolute path is <code>&quot;dir/subdir2/subsubdir2/file2.ext&quot;</code>,
+and its length is 32 (not including the double quotes).</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Given a string representing the file system in the above format, return the length of the longest
+absolute path to a file in the abstracted file system. If there is no file in the system, return 0.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Note:</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The name of a file contains at least a period and an extension.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The name of a directory or sub-directory will not contain a period.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><a href="https://www.dailycodingproblem.com/subscribe?email=neilniuyunpeng%40gmail.com&amp;ref=techlead">Upgrade to premium</a> and get in-depth solutions to every problem. Since you were referred by one of our affiliates, you&#39;ll get a 10% discount on checkout!</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">If you liked this problem, feel free to forward it along so they can <a href="https://www.dailycodingproblem.com/">subscribe here</a>! As always, shoot us an email if there&#39;s anything we can help with!</p>
+<hr>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; line-height: 1.5; text-align: left; font-size: 0.7em;">
+  No more? <a href="https://dailycodingproblem.com/unsubscribe?unsubscribeKey=ebcd6bf5ab7a30fd958cc9e7dd6d0ad29de5fe5918fdfd82eda0b2c448bef2773d30f839">Unsubscribe</a>.
+</p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

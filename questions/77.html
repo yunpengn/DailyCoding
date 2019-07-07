@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Coding Problem: Problem #77
+</title>
+    
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td valign="top" style="padding: 0;">
+          <table border="0" cellpadding="20" cellspacing="0" width="600">
+            <tr>
+              <td align="center" valign="top" style="padding: 0;">
+                <p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Good morning! Here&#39;s your coding interview problem for today.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">This problem was asked by Snapchat.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Given a list of possibly overlapping intervals, return a new list of intervals where all overlapping intervals have been merged.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The input list is not necessarily ordered in any way.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">For example, given [(1, 3), (5, 8), (4, 10), (20, 25)], you should return [(1, 3), (4, 10), (20, 25)].</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2Bz6QcOxyCKetP6lYnXnpQiz1ugjRCI-2FYmSpfsTqJ-2FCdk-2Bha2D733KHMPtrBPJpOZLYH3bpngRzjK0fXYhNx-2Fpw-2BHhcyKYEkOj-2F-2B8QGNCswog-3D-3D_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crGeis5fs-2F20PKNsqtkC2dKFaZH785qlp2X8Y9IkxerAuVJUbmtJkdB9uuMgqyAU6GP7iTsKKiOaKGt5Q1q3a-2BmuQU6Vwiuopwr-2FjiEh8F-2BrQKqDtxCFBpZhOa0ZH3bnsO30anohEIsl9mY9fQNZJnYIM54DUeuVVj3Mz2BYfOfQeHCaI7tc8K3RyvKT2zpm2d0-3D">Upgrade to premium</a> and get in-depth solutions to every problem. Since you were referred by one of our affiliates, you&#39;ll get a 10% discount on checkout!</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">If you liked this problem, feel free to forward it along so they can <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2BIpaIl6O7R00We7pC2-2FYno_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crGeis5fs-2F20PKNsqtkC2dKFaZH785qlp2X8Y9IkxerAuZBxdRqP9T6YvTbeftJNLgDx9K2BflXkXCPM-2F3HdPjAkcxyOizap-2BSbvsQDPdaHl-2BDVnCjT3hNFSMh-2FFvcH0bLU-2BYA6IYzfQtD5dW71eS0idAUOWMsMtC-2BJDo-2BpAG1TSXyhTLB1gbPKdxTKy5dm-2Bz6A-3D">subscribe here</a>! As always, shoot us an email if there&#39;s anything we can help with!</p>
+<hr>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; line-height: 1.5; text-align: left; font-size: 0.7em;">
+  No more? <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwTq4x5HkPwxRhpDWfk1b7nXvgvDhSC78LLls-2Bvqs1KQvHGZzlxUHjTKmlyywaw1SP2FR41wNM7qoxv8OBWHr2ogX9kbwkhwcJL2e7fsFeS1LZAbxSFx-2BNoBsW4-2F6gAg9OLhOH2jcGK67NWcO8Aajk7wZeufwVSJS-2B1pOlPX-2F-2FfW-2F_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crGeis5fs-2F20PKNsqtkC2dKFaZH785qlp2X8Y9IkxerAuedGir0Dn7ndLjcP99FPC0EyOQJsF-2BhJVE56JfVCxHLJ30xoRboNMuncRtEJfJrOChbFzRBAkVWENDDA2kAFz-2FSTLq7k8EohfRl3s6fHTns1NKtwtq-2BtJQFu-2BRjfjTS39Lk0ejoEdWcIUeSQvXNOQDA-3D">Unsubscribe</a>.
+</p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  
+<img src="http://links.dailycodingproblem.com/wf/open?upn=EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crGeis5fs-2F20PKNsqtkC2dKFaZH785qlp2X8Y9IkxerAubez070P6ruGTM5pS1WXrajTTxhgTyJKauGAJgO5zBdPAE3dNmIr4k2CnXqdBeOHhFgLw8Gb6xVmD8dmi86wj2102wENUHtewGI5fhKnALl1gRanf1OkQ2s9O2e6heu7xdksSaNZRsn1iznOVQ5wGe8-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Coding Problem: Problem #72
+</title>
+    
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td valign="top" style="padding: 0;">
+          <table border="0" cellpadding="20" cellspacing="0" width="600">
+            <tr>
+              <td align="center" valign="top" style="padding: 0;">
+                <p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Good morning! Here&#39;s your coding interview problem for today.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">This problem was asked by Google.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">In a directed graph, each node is assigned an uppercase letter. We define a path&#39;s value as the number of most frequently-occurring letter
+along that path. For example, if a path in the graph goes through &quot;ABACA&quot;, the value of the path is 3, since there are 3 occurrences of
+&#39;A&#39; on the path.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Given a graph with <code>n</code> nodes and <code>m</code> directed edges, return the largest value path of the graph. If the largest value is infinite, then
+return null.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The graph is represented with a string and an edge list. The <code>i</code>-th character represents the uppercase letter of the <code>i</code>-th node.
+Each tuple in the edge list <code>(i, j)</code> means there is a directed edge from the <code>i</code>-th node to the <code>j</code>-th node. Self-edges are possible,
+as well as multi-edges.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">For example, the following input graph:</p>
+<pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>ABACA
+</code></pre><pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>[(0, 1),
+ (0, 2),
+ (2, 3),
+ (3, 4)]
+</code></pre><p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Would have maximum value 3 using the path of vertices <code>[0, 2, 3, 4]</code>, <code>(A, A, C, A)</code>.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">The following input graph:</p>
+<pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>A
+</code></pre><pre style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><code>[(0, 0)]
+</code></pre><p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Should return null, since we have an infinite loop.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2Bz6QcOxyCKetP6lYnXnpQiz1ugjRCI-2FYmSpfsTqJ-2FCdk-2Bha2D733KHMPtrBPJpOZLYH3bpngRzjK0fXYhNx-2Fpw-2BHhcyKYEkOj-2F-2B8QGNCswog-3D-3D_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crFgRe6iI6-2Bx37M9T3lN59Ou5aJKsObiZZuPn-2FYQGirN4bsLtH2990shR4kkdr9tLFxbs7H-2BuxzKfyRgGq8H-2Fje7zjWrKn6frmY6OgCaWHzg-2FOpcy0wJ7mFoZmo1CHyi-2F2BH-2FmoKrzLA-2BzHCiV-2B9O5WePg2KWvuRXwNXIQMQ1SkRgCNwWEcbikWKG7lS3kwmvHk-3D">Upgrade to premium</a> and get in-depth solutions to every problem. Since you were referred by one of our affiliates, you&#39;ll get a 10% discount on checkout!</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">If you liked this problem, feel free to forward it along so they can <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2BIpaIl6O7R00We7pC2-2FYno_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crFgRe6iI6-2Bx37M9T3lN59Ou5aJKsObiZZuPn-2FYQGirN4TjR3dz8zouYQbO7VKMCPDW8mZGLZNgfDFT1LbDH5j0guSXEhHRRa1LVhy1DEIFwe-2Bua9IAFBQm9arruZxANObkRAT2XSEWQctN-2Ft45REqrf9BB1C-2FgS4H3GjpwyVSvPNnsF8sVgPH8nGC6ViH5C02c-3D">subscribe here</a>! As always, shoot us an email if there&#39;s anything we can help with!</p>
+<hr>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; line-height: 1.5; text-align: left; font-size: 0.7em;">
+  No more? <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwTq4x5HkPwxRhpDWfk1b7nXvgvDhSC78LLls-2Bvqs1KQvHGZzlxUHjTKmlyywaw1SP2FR41wNM7qoxv8OBWHr2ogX9kbwkhwcJL2e7fsFeS1LZAbxSFx-2BNoBsW4-2F6gAg9OLhOH2jcGK67NWcO8Aajk7wZeufwVSJS-2B1pOlPX-2F-2FfW-2F_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crFgRe6iI6-2Bx37M9T3lN59Ou5aJKsObiZZuPn-2FYQGirN4VvWa-2BGS317ynQAc6A3kTXNQ5-2F0ZgFyD-2F3ar1-2BlDzd3I33JP5nR94cC1s3T3EPod4IAvy-2FAoSUFtDdBPG86U44NOL1R2m4NrOfqx-2F0aA18ErgKIv-2FFp6tnOiGRREVjG0tn4cTwk21n3gIDUclzKBhWA-3D">Unsubscribe</a>.
+</p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  
+<img src="http://links.dailycodingproblem.com/wf/open?upn=EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crFgRe6iI6-2Bx37M9T3lN59Ou5aJKsObiZZuPn-2FYQGirN4eQ0m31RQZHqYynhwSV6IrhyeHrVgHyiDHiF9ayP8x-2FaJbR-2Fb85P1rE3QZzhuicBkGKPov4oBHL6PbejvSv3ULU1eru0aUANPBF2e-2FXrNGmnpERC-2FD3VkS0F4gvOfd7Jx-2B27Z6bzQDIRVY2YzCh61LA-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>

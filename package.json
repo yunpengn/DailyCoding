@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Yunpeng Niu",
+    "email": "neilniuyunpeng@gmail.com",
+    "url": "https://yunpengn.github.io/"
+  },
+  "dependencies": {
+    "mailparser": "^2.7.1",
+    "node-mbox": "^1.0.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/yunpengn/DailyCoding",
+  "license": "GPL-3.0-only",
+  "name": "daily-coding",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yunpengn/DailyCoding.git"
+  },
+  "scripts": {},
+  "version": "0.1.0"
+}

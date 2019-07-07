@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Coding Problem: Problem #75
+</title>
+    
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td valign="top" style="padding: 0;">
+          <table border="0" cellpadding="20" cellspacing="0" width="600">
+            <tr>
+              <td align="center" valign="top" style="padding: 0;">
+                <p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Good morning! Here&#39;s your coding interview problem for today.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">This problem was asked by Microsoft.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">Given an array of numbers, find the length of the longest increasing subsequence in the array. The subsequence
+does not necessarily have to be contiguous.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">For example, given the array [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15], the longest increasing subsequence
+has length 6: it is 0, 2, 6, 9, 11, 15.</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;"><a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2Bz6QcOxyCKetP6lYnXnpQiz1ugjRCI-2FYmSpfsTqJ-2FCdk-2Bha2D733KHMPtrBPJpOZLYH3bpngRzjK0fXYhNx-2Fpw-2BHhcyKYEkOj-2F-2B8QGNCswog-3D-3D_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crE-2FUA0ENALtnxkg46ng8Lc1sDZ-2BajDRDC-2FWY-2Fwf69CvgZvGMtHsOO6ihu4lyXp5f4CQJPWyPOzkH5FtmTbwmz-2B543JwOxykQb5TKMXYnNw2KEH6b3PjdqoJaO6HKnmNPnLLTbIHULs62t7MKAVVcJLF39mpNHQpKlHJtxUY1-2BGC6Rwun5Ji-2FClHh8hjRamd-2BdY-3D">Upgrade to premium</a> and get in-depth solutions to every problem. Since you were referred by one of our affiliates, you&#39;ll get a 10% discount on checkout!</p>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.5; text-align: left;">If you liked this problem, feel free to forward it along so they can <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwWErdzWeRmfVcT48gFYejU-2BIpaIl6O7R00We7pC2-2FYno_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crE-2FUA0ENALtnxkg46ng8Lc1sDZ-2BajDRDC-2FWY-2Fwf69CvgervFy1HlxnabQqLJ48ZeNLqcGop4vuLM3UC9Ftc0YaFNqiZC6rq14TorWsEt9zKm2Gh09h2etyETRYgiwG0Xr6M-2FpJ9RI0NZd5Q5lbwFv3SX2z-2FtKkfmMHdBxgzSZcpDdrG4BThMrGqgJHz88joepg-3D">subscribe here</a>! As always, shoot us an email if there&#39;s anything we can help with!</p>
+<hr>
+<p style="color: #202020; font-family: 'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif; line-height: 1.5; text-align: left; font-size: 0.7em;">
+  No more? <a href="http://links.dailycodingproblem.com/wf/click?upn=-2F03iMydR750DKx07F4BRwTq4x5HkPwxRhpDWfk1b7nXvgvDhSC78LLls-2Bvqs1KQvHGZzlxUHjTKmlyywaw1SP2FR41wNM7qoxv8OBWHr2ogX9kbwkhwcJL2e7fsFeS1LZAbxSFx-2BNoBsW4-2F6gAg9OLhOH2jcGK67NWcO8Aajk7wZeufwVSJS-2B1pOlPX-2F-2FfW-2F_EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crE-2FUA0ENALtnxkg46ng8Lc1sDZ-2BajDRDC-2FWY-2Fwf69CvgYLbavtlbQkmvkXieUoum-2Bxl5-2F-2BoflG-2ByFcvzYmUrJTHMVxCImGGGCMJcv-2FwpL4qr1v9CXIF9zRawAEy6fGmHf66O-2BfWtNHs0xtcPXSM2xiidpyX7q2bSQlEyeK9xgQnz4uEL8fNZprPafGoiv7DFR4-3D">Unsubscribe</a>.
+</p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  
+<img src="http://links.dailycodingproblem.com/wf/open?upn=EP-2B981ONI9vnYgcp-2F88B30q5zJKeWaGI25uIN2L7crE-2FUA0ENALtnxkg46ng8Lc1sDZ-2BajDRDC-2FWY-2Fwf69CvgT-2FGkElh-2BQ-2FLi3nElmyMYueSR4Qf1tI4xK0xzvJpIEi4r0faspfjHsiHdQXjVuIS-2B3q-2B8Uf96MS2ZDj6uKrvH6ZrIrlYDiUViyMkz4Fx-2Bf3VXM7SZrwHRqZ3ONIKEbuTjBGjZYSMBAXhQ2tBzM5s5Ns-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
