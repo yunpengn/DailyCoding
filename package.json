@@ -17,6 +17,8 @@
     "type": "git",
     "url": "git@github.com:yunpengn/DailyCoding.git"
   },
-  "scripts": {},
+  "scripts": {
+    "parse": "cd scripts/ && node parse.js"
+  },
   "version": "0.1.0"
 }
