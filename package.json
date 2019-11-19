@@ -5,7 +5,7 @@
     "url": "https://yunpengn.github.io/"
   },
   "dependencies": {
-    "mailparser": "^2.7.1",
+    "mailparser": "^2.7.6",
     "node-mbox": "^1.0.0"
   },
   "devDependencies": {},
