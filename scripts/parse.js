@@ -4,10 +4,18 @@ const parser  = require('mailparser').simpleParser;
 const Mbox    = require('node-mbox');
 
 // Defines some constants.
+const defaultFilePath = './problems.mbox';
 const defaultSubjectPrefix = 'Daily Coding Problem: Problem #';
+const defaultPaddingLength = 3;
+
+// Checks whether the file exists.
+if (!fs.existsSync(defaultFilePath)) {
+    console.log(`Cannot find any file at expected path of ${defaultFilePath}. Please check.`);
+    return;
+}
 
 // Parses the given .mbox file.
-const mbox = new Mbox('./problems.mbox');
+const mbox = new Mbox(defaultFilePath);
 mbox.on('message', msg => {
     // Parses the given raw email message.
     parser(msg).then(mail => {
@@ -25,7 +33,7 @@ mbox.on('message', msg => {
             console.log(`Cannot find question ID from ${subject}.`);
             return;
         }
-        const questionID = matchID[0];
+        const questionID = matchID[0].padStart(defaultPaddingLength, '0');
 
         // Extracts the difficulty level;
         const matchLevel = /(Easy|Medium|Hard)/.exec(title);
